@@ -1,0 +1,12 @@
+/*
+Calculate the Total Amount Spent by Each Customer.
+*/
+
+
+SELECT customers.fname,
+       customers.lname,
+       orders.order_id,
+       orders.total_price
+FROM   orders
+       RIGHT JOIN customers
+               ON orders.customer_id = customers.customer_id

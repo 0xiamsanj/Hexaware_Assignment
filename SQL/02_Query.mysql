@@ -1,0 +1,6 @@
+/*
+SQL Query to remove all cart items for a specific customer e.g customer_id =1
+*/
+
+DELETE FROM cart
+WHERE  customer_id = 1

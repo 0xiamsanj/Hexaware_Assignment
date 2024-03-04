@@ -1,0 +1,7 @@
+/*
+SQL Query to retrieve Cart Items for Customer 5.
+*/
+
+select *
+from cart
+where customer_id = 5

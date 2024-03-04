@@ -1,0 +1,7 @@
+/*
+SQL Query to retrieve Products Priced Below $100.
+*/
+
+SELECT *
+FROM   product
+WHERE  price <= 100

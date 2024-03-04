@@ -1,0 +1,7 @@
+/*
+SQL Query to find Products with Stock Quantity Greater Than 5.
+*/
+
+
+select * from product
+where stockQuantity>5

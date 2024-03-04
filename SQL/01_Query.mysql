@@ -1,0 +1,7 @@
+/*
+SQL Query to update refrigerator product price to 800.
+*/
+
+UPDATE product
+SET    price = "800"
+WHERE  name = "refrigerator"

@@ -1,0 +1,7 @@
+/*
+SQL Query to retrieve Orders with Total Amount Between $500 and $1000.
+*/
+
+select *
+from orders
+where (total_price>500 and total_price<1000)

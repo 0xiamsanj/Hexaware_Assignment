@@ -1,0 +1,8 @@
+/*
+SQL Query to find Customers Who Placed Orders in 2023.
+*/
+
+
+select *
+from orders
+where year(order_date)=2023

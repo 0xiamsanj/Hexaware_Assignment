@@ -1,0 +1,7 @@
+/*
+SQL query to find Products which name end with letter ‘r’.
+*/
+
+select *
+from product
+where name like '%r'
