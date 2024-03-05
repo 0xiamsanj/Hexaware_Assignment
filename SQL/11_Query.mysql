@@ -1,7 +1,0 @@
-/*
-SQL Query to find the Average Order Amount for Each Customer.
-*/
-
-SELECT Avg(total_price) AS average_amount
-FROM   orders
-GROUP  BY customer_id;

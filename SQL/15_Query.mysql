@@ -1,9 +1,0 @@
-/*
-SQL subquery to Find Products Not in the Cart.
-*/
-
-
-SELECT *
-FROM   products
-WHERE  product_id NOT IN (SELECT product_id
-                          FROM   cart);
