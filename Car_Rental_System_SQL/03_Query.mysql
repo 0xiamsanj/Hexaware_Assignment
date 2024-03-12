@@ -1,0 +1,5 @@
+/*
+Rename the "paymentDate" column in the Payment table to "transactionDate".
+*/
+ALTER TABLE payment
+  RENAME COLUMN paymentdate TO transactiondate

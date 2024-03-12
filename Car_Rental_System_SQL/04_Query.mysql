@@ -1,0 +1,7 @@
+/*
+Find a specific customer by email.
+*/
+
+SELECT *
+FROM   customers
+WHERE  email = 'johndoe@example.com'

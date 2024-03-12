@@ -1,0 +1,9 @@
+/*
+Delete a specific customer and all associated leases and payments.( for customer `6`)
+*/
+
+DELETE customers, lease, payment
+FROM customers
+JOIN lease ON customers.customer_id = lease.customer_id
+JOIN payment ON payment.leaseID = lease.lease_id
+WHERE customers.customer_id = 6;

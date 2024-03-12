@@ -1,0 +1,15 @@
+/**
+Retrieve all cars leased by a specific customer( customer_id = 3)
+ */
+SELECT customers.firstname,
+       customers.lastname,
+       customers.email,
+       customers.phonenumber,
+       `vehicle`.make,
+       `vehicle`.model
+FROM   customers
+       JOIN lease
+         ON customers.customer_id = lease.customer_id
+       JOIN `vehicle`
+         ON lease.vehicle_id = `vehicle`.vehicle_id
+WHERE  customers.customer_id = 3

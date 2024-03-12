@@ -1,0 +1,6 @@
+/**
+ Calculate the average daily rate of all available cars.
+ */
+SELECT Avg(daily_rate)
+FROM   `vehicle`
+WHERE  available = 1

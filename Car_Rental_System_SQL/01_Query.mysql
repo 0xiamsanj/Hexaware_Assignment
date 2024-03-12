@@ -1,0 +1,6 @@
+/*
+SQL query to Update the daily rate for a Mercedes car to 68.
+*/
+UPDATE `vehicle`
+SET    daily_rate = 68
+WHERE  make = 'Mercedes'
