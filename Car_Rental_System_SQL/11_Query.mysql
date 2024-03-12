@@ -1,3 +1,6 @@
 /**
- * Script to create table 11
+List all payments made in the year 2023.
  */
+SELECT *
+FROM   payment
+WHERE  Year(`transactiondate`) = 2023

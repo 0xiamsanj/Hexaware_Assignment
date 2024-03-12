@@ -2,7 +2,6 @@
 Find the car with the highest daily rate.
 */
 
-
 SELECT *
 FROM   `vehicle`
 WHERE  daily_rate = (SELECT Max(daily_rate)

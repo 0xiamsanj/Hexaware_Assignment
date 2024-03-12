@@ -1,3 +1,7 @@
 /**
- * Script to create table 18
+List All Cars with Their Current Lease Information.
  */
+SELECT *
+FROM   `vehicle`
+       INNER JOIN lease
+               ON lease.vehicle_id = vehicle.vehicle_id
