@@ -1,0 +1,16 @@
+/*
+Calculate Total Payments for Each Customer.
+*/
+
+SELECT c.customer_id,
+       c.firstname,
+       c.lastname,
+       Sum(p.amount) AS total_payments
+FROM   customers c
+       JOIN lease l
+         ON c.customer_id = l.customer_id
+       JOIN payment p
+         ON l.lease_id = p.leaseid
+GROUP  BY c.customer_id,
+          c.firstname,
+          c.lastname;
