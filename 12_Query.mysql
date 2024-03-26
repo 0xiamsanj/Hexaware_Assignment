@@ -1,0 +1,15 @@
+/*
+SQL Query to Count the Number of Orders Placed by Each Customer.
+*/
+
+
+SELECT orders.customer_id,
+       customers.fname,
+       customers.lname,
+       Sum(quantity)
+FROM   orders
+       INNER JOIN order_items
+               ON order_items.order_id = orders.order_id
+       INNER JOIN customers
+               ON customers.customer_id = orders.customer_id
+GROUP  BY orders.order_id
